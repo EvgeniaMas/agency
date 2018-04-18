@@ -169,7 +169,11 @@ border: 2px solid #50b3d3;
 
 
 <section id ="price" class="container-fluid">
-	<div class="container">
+	<!-- <img class="infograf" src="img/inforgrafiks.jpg"> -->
+	<img class="model" src="img/model.png">
+	<img class="table" src="img/table.png">
+	<div class="overlay"></div>
+	<div class="container price_content">
 		<h2 class="price_title">Стоимость рекламы ниже,<br> чем в <span>Яндекс-Директ и Google Adwo<span>rds!</h2>
 		<p class="dashed_line"></p>
     <div class="row">     
@@ -194,7 +198,7 @@ border: 2px solid #50b3d3;
      <img class="four_number" src="img/4.png" alt="Номер">
      <p class="price_text centered">Да-да, пожалуй, самое весомое <br> преимущество перед любыми другими источниками. <br> Грамотная настройка таргета+бомбические креативы от наших <br> дизайнеров, наш многолетний опыт на слитых миллионах <br> бюджета в рекламе фэйсбука дают цены лидов, <br> которые недостижимы в любых других рекламных сетях.</p>
 
-<img class="table_img" src="img/table.png" alt="Таблица">
+<!-- <img class="table_img" src="img/table.png" alt="Таблица"> -->
    </div>
  </section>
 
@@ -251,18 +255,31 @@ border: 2px solid #50b3d3;
 
 
  <section id ="schema" class="container-fluid">
-	<div class="container">
+	<div class="container graf">
 		<div class="col-md-12">
 			    
 		      
-		      <h2 class="mainscreen__description">Как мы работаем?</h2>
-		      
-		    <p class="schema_text">Анализируем Ваш бизнес</p>
-		    <p class="schema_text">Строим стратегию</p>
-		    <p class="schema_text">Наши дизайнеры смогут сделать Вам промо</p>
-		    <p class="schema_text">Создаем рекламный кабинет</p>
-		    <p class="schema_text">Создаем, оптимизируем и выделяем лучшие компании</p>
-		    <p class="schema_text">Масштабируем лучшие компании</p>
+		    <h2 class="schema__title">Как мы работаем?</h2>
+
+		    <div class="col-md-12 graf_container">
+		    <img src="img/grafik2.png">
+		    <p class="schema_text step1">Анализируем Ваш бизнес</p>
+		    <p class="schema_text step2">Строим стратегию</p>
+		    <p class="schema_text step3">Наши дизайнеры смогут <br>сделать Вам промо</p>
+		    <p class="schema_text step4">Создаем рекламный <br> <span>кабинет</span></p>
+		    <p class="schema_text step5">Создаем, оптимизируем <br> и выделяем лучшие компании</p>
+		    <p class="schema_text step6">Масштабируем <br>лучшие компании</p>
+		  </div>
+
+
+		    <div class="col-md-12 graf_container2">
+		    <p class="schema_text2"><span>1.</span> Анализируем Ваш бизнес</p>
+		    <p class="schema_text2"><span>2.</span> Строим стратегию</p>
+		    <p class="schema_text2"><span>3.</span> Наши дизайнеры смогут сделать Вам промо</p>
+		    <p class="schema_text2"><span>4.</span> Создаем рекламный кабинет</p>
+		    <p class="schema_text2"><span>5.</span> Создаем, оптимизируем и выделяем лучшие компании</p>
+		    <p class="schema_text2"><span>6.</span> Масштабируем лучшие компании</p>
+		    </div>
 
 		  
        </div>
@@ -272,13 +289,13 @@ border: 2px solid #50b3d3;
   <section id ="result" class="container-fluid">
 	<div class="container">
 		<div class="col-md-12">		
-		      <h2 class="result__description">Результаты работы</h2>
-		      <h2 class="result__description">Что Вы получаете</h2>
+		      <h2 class="result__title">Результаты работы</h2>
+		      <h2 class="result__title get">Что Вы получаете?</h2>
 		      <p class="results_text">Количество кликов <span>38</span>к</p>
-		      <p class="results_text">Цена за клик <span>0,03</span>$</p>
-		      <p class="results_text">Охват аудитории<span>1 026 053!</span></p>
-		      <h2 class="result__description">Вы все еще сомневаетесь?</h2>
-		      <h2 class="result__description">Тогда мы подарим Вам бесплатную тестовую компанию</h2>
+		      <p class="results_text">Цена за клик <span>0.03</span>$</p>
+		      <p class="results_text">Охват аудитории <span>1 026 053!</span></p>
+		      <h3 class="result__free doubt">Вы все еще сомневаетесь?</h3>
+		      <h3 class="result__free">Тогда мы бесплатно подарим <br> Вам тестовую компанию!</h3>
 
 
 		     	      
@@ -290,26 +307,25 @@ border: 2px solid #50b3d3;
 
   <section id ="form" class="container-fluid">
 	<div class="container form_field">
-		  <h2 class="result__description">Остались вопросы?</h2>
+		<h2 class="form__title">Остались вопросы?</h2>
 		<form class="form-horizontal" action="advice.php" method="POST" > 
-
     <div class="form-group"> 
       <div class="text-center">
-        <input type="text" class="form-control mains" name= "name"  placeholder="Ваше имя" required="required">
+        <input type="text" class="form-control mains" name= "name"  placeholder="ВАШЕ ИМЯ" required="required">
       </div>
     </div>
     <div class="form-group">                
       <div class="text-center">
-        <input type="email" class="form-control phones mains" name= "email"  placeholder="Введите Ваш e-mail" required="required">
+        <input type="email" class="form-control phones mains" name= "email"  placeholder="ВВЕДИТЕ ВАШ e-mail" required="required">
       </div>
     </div>
     <div class="form-group">                
       <div class="text-center">
-      	<textarea rows="10" cols="58" name="text" placeholder="Сообщение" required="required"></textarea>
-       
+      	<textarea name="text" placeholder="Сообщение" required="required"></textarea>
+
       </div>
     </div>
-    <div class="form-group">         
+    <div class="form-group blue_field">         
         <button type="submit" class="questions_btn">Отправить</button>         
     </div>
     </form>
