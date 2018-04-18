@@ -89,57 +89,69 @@ text-shadow:0px 0px 0 rgb(124,189,211),1px 1px 0 rgb(124,189,211),2px 2px 0 rgb(
 
 
 #price{position:relative;
-background:url(../img/inforgrafiks.jpg) no-repeat;
-background-position: 50% 50%;
-/*background-size: cover;*/
+background: url(../img/info_out.png) no-repeat;
+background-position: center;
+background-size: cover;
 background-repeat: no-repeat;     
 padding-bottom: 30px;
 position: relative;
 z-index: 2;
+/*opacity: 0.7;*/
+min-height: 1596px;
 
 }
 
-.model {
+#price_big {
+  background:url(../img/info.jpg) no-repeat;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;     
+position: relative;
+z-index: 1;
+}
+
+/*.model {
     display: block;
   width: 100vw;
-  position: absolute;
-  top: 300px;
+  position: relative;
+  margin-top: 300px;
   right: 0;
+  max-height: 800px;
 left: 0;
-z-index: 4;
-opacity: 
-}
+z-index: 12;
 
-.table {
+}*/
+
+/*.table {
  display: block;
-  width: 100vw;
-  position: absolute;
-  top: 1000px;
-  right: 0;
-left: 0;
+  
+  position: relative;
+  
 z-index: 3;
-}
+}*/
 
 .price_content {
-  position: relative;
-  z-index: 12;
+  position: absolute;
+  top: 0;
+  
+  right:0;
+  left: 0;
+  z-index: 22236;
 }
 
 .overlay{
 background-color: rgba(141,216,242, 0.6);
-
-position: absolute;
-height: 100;
-top:0;
-right: 0;
-left: 0;
-z-index: 6;
-min-height: 1000px;
+/*position: absolute;
 height: 100%;
+top:700;
+right: 0;
+left: 0;*/
+z-index: 2;
+/*min-height: 1000px;
+height: 100%;*/
 }
 
 h2.price_title {
-  /*font-family: 'Arial Black', sans-serif;*/
 line-height: 1em;
 text-transform: uppercase;
 color: #fff;
@@ -149,33 +161,60 @@ text-align: center;
 padding-left: 20px;
 }
 
-p.dashed_line {
-  border-bottom: 2px dashed #c1e1e9;
-   width: 70%;
-   margin:auto;
-   margin-top: 20px;
-  background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill: none; stroke: red; stroke-width: 4; stroke-dasharray: 5 20'/></svg>");
+.dotted_line {
+  display: block;
+  margin:auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 
 .price_textTitle {
   text-transform: uppercase;
   color: #32525d;
-  display: inline-block;
+  font-size: 26px;
+  display: block;
+  line-height: 42px;
+  text-align: center;
+   width: 100%;
+  margin:auto;
+  
+   font-style: normal;
 }
 
 .price_icon {
   display: block;
   margin:auto;
+  height: 188px;
 }
 
 .price_text {
   color: #32525d;
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: left;
+  font-size: 16px;
+  width: 90%;
+  margin:auto;
+}
+
+.price__numbers {
+ font-size: 74px;
+margin:auto;
+text-align: center;
+letter-spacing: 0.95;
+line-height: 1.3;
+text-shadow: 5px 8px #61b3ce, 0px 4px #61b3ce; 
+color: #fff;
+margin-right: 10px;
 }
 
 .four_number {
   margin:auto;
   display: block;
+  font-size: 84px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .price_text.centered {
@@ -184,6 +223,10 @@ p.dashed_line {
   margin:auto;
   line-height: 2;
   text-align: center;
+  font-size: 26px;
+  line-height: 45px;
+  color: #2c6480;
+  text-transform: none;
 }
 
 
@@ -289,10 +332,10 @@ max-height: 154px;
 
 
 #schema{position:relative;
-min-height:747px;
-background:url(../img/schema_mobile.jpg) no-repeat;
+min-height:797px;
+background:url(../img/pure.png) no-repeat;
 background-size:cover;
-background-position:left top;
+background-position:center;
 padding-bottom: 30px;
 }
 
@@ -311,6 +354,7 @@ line-height: 1.3;
   position: relative;
   padding-right: 0;
   padding-left: 0;
+ 
 }
 
 .step2 {
@@ -360,21 +404,22 @@ font-style: italic;
 
 
 #result{position:relative;
+height: 100%;
 min-height:794px;
-background:url(../img/gor.png) no-repeat;
+background:url(../img/gor2.png) no-repeat;
 background-size:cover;
-background-position:left top;
+background-position:center;
 padding-bottom: 30px;
-padding-top: 97px;
+padding-top: 92px;
 }
 
 h2.result__title {
 text-transform: uppercase;
-font-size: 48px;
+font-size: 54px;
 margin:auto;
 text-align: center;
 font-style: italic;
-letter-spacing: 0.95;
+letter-spacing: 0.75px;
 line-height: 1.3;
 }
 
@@ -383,25 +428,27 @@ h2.result__title.get {
 }
 
 .results_text {
-text-transform: uppercase;
-font-size: 24px;
+
+font-size: 34px;
 margin:auto;
 text-align: center;
 letter-spacing: 0.95;
 line-height: 1.3;
-text-shadow: 5px 4px #61b3ce;
+text-shadow: 5px 8px #61b3ce, 0px 4px #61b3ce;
 }
 
 .results_text span {
-font-size: 52px;
+font-size: 82px;
+
+
 }
 
 .result__free {
 text-transform: uppercase;
-font-size: 36px;
+font-size: 48px;
 margin:auto;
 text-align: center;
-letter-spacing: 0.95;
+letter-spacing: 1.2;
 line-height: 1.3;
 text-shadow: 5px 4px #49a2bf;
 }
@@ -420,12 +467,12 @@ margin-top: 45px;
 
 .form__title {
 text-transform: uppercase;
-font-size: 36px;
+font-size: 54px;
 margin:auto;
 text-align: center;
 letter-spacing: 0.95;
 line-height: 1.3;
-text-shadow: 5px 4px #49a2bf; 
+text-shadow: 0px 8px #49a2bf, 0px 4px #49a2bf;
 margin-bottom: 33px; 
 }
 
@@ -446,11 +493,12 @@ textarea {
   background-color:#8dd8f2;
   border: 1px solid #8dd8f2;
   text-transform: uppercase;
-  font-size: 36px;
+  font-size: 42px;
   text-align: center;
   width: 788px;
-  height: 363px;
-  text-shadow: 5px 4px #008ba9; 
+  height: 213px;
+  text-shadow: 0px 8px #49a2bf, 0px 4px #49a2bf;
+  padding-top: 46px;
 }
 
 .blue_field {
@@ -461,14 +509,15 @@ textarea {
 .questions_btn {
   background-color: #98dff7;
   float: right;
-  width: 220px;
+  width: 242px;
   height: 85px;
   line-height: 85px;
   margin-right: 30px;
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 30px;
    text-shadow: 5px 4px #008ba9; 
    border: 1px solid #98dff7;
+  
 }
 
 .questions_btn:hover{
@@ -482,11 +531,24 @@ div.modal-content
     padding: 20px;
     position: relative!important;
     z-index: 3000;
-    max-width: 350px;
+    max-width: 450px;
     margin: auto;
-    max-height: 280px;
+    min-height: 280px;
+    background-color: #74c9e6;
     
 }
+
+.order_backcall {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+div.modal-content.form-control{
+  font-size: 20px;
+}
+
 
 button.close
 {
@@ -567,7 +629,5 @@ margin-top: 20px;
 .schema_text span {
 margin-right: 20px;
 }
-
-
 
 

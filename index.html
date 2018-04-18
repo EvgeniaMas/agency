@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta content="telephone=no"name=format-detection>
+<meta content="telephone=no" name=format-detection>
 <meta content="Клиенты для Вашего бизнеса из Facebook и Instagram по цене дешевле, чем из Яндекс-Директ и Google-Adwords" name="description">
 <meta content="клиенты для бизнеса из Facebook-Instagram" name="keywords">
 <title>Poletagency</title>
@@ -63,9 +63,10 @@ img.airplane {
 
 h1.mainscreen__activity {
 	font-size: 36px;
+	margin-top: 20px;
 	text-transform: uppercase;
 	font-family: 'Arial Narrow', arial;
-    letter-spacing: 1.95;
+    letter-spacing: 1.95px;
     margin-bottom: 64px;
 
 }
@@ -80,9 +81,11 @@ h2.mainscreen__description {
 
 img.phone {
 	margin-top: 135px;
-	display: inline-block;
-	width: 315px;
+	display: inline;
+	max-width: 315px;
 	float: right;
+	-webkit-filter: drop-shadow(5px 5px 5px #d2d2d2);
+    filter:         drop-shadow(5px 5px 5px #d2d2d2);        	
 }
 
 .button_container {
@@ -156,11 +159,11 @@ border: 2px solid #50b3d3;
 		      <h2 class="mainscreen__description">Приводим клиентов Facebook-Instagram</h2>
 		      <div class="button_container">
 		       <button class="mainscreen__buttonWhite"></button>	
-		      <button class="mainscreen__button">Узнать больше</button>
+		      <button class="mainscreen__button" data-target=".modal_callback" data-toggle="modal" >Узнать больше</button>
 		      </div>
 		    </div>
 		    <div class="col-md-4 col-xs-4">
-		      <img class="phone" src="img/phone.png" alt="Телефон">		      
+		      <img class="phone" src="img/phone2.png" alt="Телефон">		      
 		    </div>
        </div>
    </div>
@@ -168,38 +171,48 @@ border: 2px solid #50b3d3;
 
 
 
-<section id ="price" class="container-fluid">
+<section id ="price_big" class="container-fluid">
+	<!-- <div class="overlay"></div> -->
 	<!-- <img class="infograf" src="img/inforgrafiks.jpg"> -->
-	<img class="model" src="img/model.png">
-	<img class="table" src="img/table.png">
-	<div class="overlay"></div>
-	<div class="container price_content">
+	<!-- <img class="model" src="img/always.png"> -->
+	
+	<div class="overlay" id ="price" ></div>
+	<div class="container price_content" >
+
 		<h2 class="price_title">Стоимость рекламы ниже,<br> чем в <span>Яндекс-Директ и Google Adwo<span>rds!</h2>
-		<p class="dashed_line"></p>
+		
+		<img class="dotted_line" src="img/line.png" alt="Граница">
+
     <div class="row">     
 	<div class="col-md-12">   
 		<div class="col-md-4"> 
 			<img class="price_icon" src="img/icon1.png" alt="Преимущества">
-			 <p class="price_text"> <img src="img/1.png" alt="Номер"><span class="price_textTitle">Небольшая конкуренция</span><br>
-           Из-за трудности создания рекламных кабинетов, их банов, множества настроек таргетинга и не понимания аукциона Фейсбука, немногие работодатели научились правильно использовать  Facebook </p>
+			 <span class="price_textTitle"> <span class="price__numbers">1</span>Небольшая конкуренция</span>
+			 	<p class="price_text">Из-за трудности создания рекламных кабинетов, их банов, множества настроек таргетинга и не понимания аукциона Фейсбука, немногие работодатели научились правильно использовать  Facebook
+            </p>
 		</div>
-		<div class="col-md-4 "> 
-			<img class="price_icon" src="img/icon2.png" alt="Преимущества"> 
-			<p  class="price_text"><span class="price_textTitle"><img src="img/2.png" alt="Номер">Детальный таргетинг</span><br>
-            Можем старгетировать Вашу рекламу, начиная людьми с Москвы, заканчивая молодыми мамочками, занимающимися степ-аэробикой </p>					
+		<div class="col-md-3 "> 
+			<img class="price_icon" src="img/icon2.png" alt="Преимущества">
+			<span class="price_textTitle"><span class="price__numbers">2</span>Детальный таргетинг</span>
+			 	<p class="price_text">Можем старгетировать Вашу рекламу, начиная людьми с Москвы, заканчивая молодыми мамочками, занимающимися степ-аэробикой
+               </p> 
+							
 		</div>
-		<div class="col-md-4"> 
-			<img class="price_icon" src="img/icon3.png" alt="Преимущества"> 
-            <p class="price_text"><span class="price_textTitle"><img src="img/3.png" alt="Номер">Многоформатная реклама</span><br>
-            Реклама в Instagram истории, новостных лентах, статичная видеореклама, наш отдел дизайна, с большим опытом креативов под Facebook, создаст конвертящие кликабельные креативы под любой бизнес</p>		
+		<div class="col-md-5"> 
+			<img class="price_icon" src="img/icon3.png" alt="Преимущества">
+			<span class="price_textTitle"><span class="price__numbers">3</span>Многоформатная реклама</span>
+			 	<p class="price_text"> Реклама в Instagram истории, новостных лентах, статичная видеореклама, наш отдел дизайна, с большим опытом креативов под Facebook, создаст конвертящие кликабельные креативы под любой бизнес
+               </p> 
+            
 		</div>
   </div>
 </div> <!-- row -->
-     <img class="four_number" src="img/4.png" alt="Номер">
+    <span class="price__numbers four_number">4</span>
      <p class="price_text centered">Да-да, пожалуй, самое весомое <br> преимущество перед любыми другими источниками. <br> Грамотная настройка таргета+бомбические креативы от наших <br> дизайнеров, наш многолетний опыт на слитых миллионах <br> бюджета в рекламе фэйсбука дают цены лидов, <br> которые недостижимы в любых других рекламных сетях.</p>
 
 <!-- <img class="table_img" src="img/table.png" alt="Таблица"> -->
    </div>
+  
  </section>
 
 
@@ -293,7 +306,7 @@ border: 2px solid #50b3d3;
 		      <h2 class="result__title get">Что Вы получаете?</h2>
 		      <p class="results_text">Количество кликов <span>38</span>к</p>
 		      <p class="results_text">Цена за клик <span>0.03</span>$</p>
-		      <p class="results_text">Охват аудитории <span>1 026 053!</span></p>
+		      <p class="results_text">Охват Аудитории <span>1 026 053!</span></p>
 		      <h3 class="result__free doubt">Вы все еще сомневаетесь?</h3>
 		      <h3 class="result__free">Тогда мы бесплатно подарим <br> Вам тестовую компанию!</h3>
 
@@ -308,20 +321,20 @@ border: 2px solid #50b3d3;
   <section id ="form" class="container-fluid">
 	<div class="container form_field">
 		<h2 class="form__title">Остались вопросы?</h2>
-		<form class="form-horizontal" action="advice.php" method="POST" > 
+		<form class="form-horizontal" action="consult.php" method="POST" > 
     <div class="form-group"> 
       <div class="text-center">
-        <input type="text" class="form-control mains" name= "name"  placeholder="ВАШЕ ИМЯ" required="required">
+        <input type="text" class="form-control " name= "name"  placeholder="ВАШЕ ИМЯ" required="required">
       </div>
     </div>
     <div class="form-group">                
       <div class="text-center">
-        <input type="email" class="form-control phones mains" name= "email"  placeholder="ВВЕДИТЕ ВАШ e-mail" required="required">
+        <input type="email" class="form-control " name= "email"  placeholder="ВВЕДИТЕ ВАШ e-mail" required="required">
       </div>
     </div>
     <div class="form-group">                
       <div class="text-center">
-      	<textarea name="text" placeholder="Сообщение" required="required"></textarea>
+      	<textarea name="text" ame="message" placeholder="Сообщение" required="required"></textarea>
 
       </div>
     </div>
@@ -334,7 +347,7 @@ border: 2px solid #50b3d3;
 
 
 
-<form action="mail.php" method="POST">
+<form action="call.php" method="POST">
 <div class="modal fade modal_callback" tabindex="-1" role="dialog">
 <div class="modal-dialog" role="document">
   <div class="modal-content">
@@ -345,17 +358,17 @@ border: 2px solid #50b3d3;
       </p>
       <div class="form-group"> 
       <div class="text-center">
-        <input type="text" class="form-control mains" name= "name"  placeholder="Ваше имя" required="required">
+        <input type="text" class="form-control" name= "name"  placeholder="Ваше имя" required="required">
       </div>
     </div>
     <div class="form-group">                
       <div class="text-center">
-        <input type="phone" class="form-control phones mains" name= "phone"  placeholder="Ваш телефон" required="required">
-        <input name="purpose" value="обратный звонок" type="hidden" />
+        <input type="phone" class="form-control phones" name= "phone"  placeholder="Ваш телефон" required="required">
+        
       </div>
     </div>
     <div class="form-group">         
-        <button type="submit" id="get_advices" class="more_btn ">Заказать</button>         
+        <button type="submit" class="questions_btn">Заказать</button>         
     </div>
    <div class="clearfix">  </div>
     </div>
@@ -364,35 +377,6 @@ border: 2px solid #50b3d3;
 </div>
 </form>
 
-<form action="mail.php" method="POST"> 
- <div class="modal fade modal_consult" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      <div class="modal-body modal-call-body">
-      <p class="order_backcall">
-        Заказ консультации
-      </p>
-      <div class="form-group"> 
-      <div class="text-center">
-        <input type="text" class="form-control mains" name= "name"  placeholder="Ваше имя" required="required">
-      </div>
-    </div>
-    <div class="form-group">                
-      <div class="text-center">
-        <input type="phone" class="form-control phones mains" name= "phone"  placeholder="Ваш телефон" required="required">
-         <input name="purpose" value="консультацию" type="hidden" />
-      </div>
-    </div>
-    <div class="form-group">         
-        <button type="submit" id="get_advices" class="more_btn ">Заказать</button>         
-    </div>
-   <div class="clearfix">  </div>
-    </div>
-  </div>
-</div>
-</div>
-</form>
 
 
 <!-- Bootstrap -->

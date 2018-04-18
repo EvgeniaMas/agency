@@ -2554,7 +2554,7 @@ output {
   font-size: 36px;
   line-height: 1.42857143;
   color: #fff;
-  text-shadow: 5px 4px #008ba9; 
+  text-shadow: 0px 8px #49a2bf, 0px 4px #49a2bf;
   
   text-align: center;
   background-color: #8dd8f2;
