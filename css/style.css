@@ -1,3 +1,63 @@
+@font-face {
+    font-family: "Arial-Black";
+    src: url("../fonts/Arial-Black.eot");
+    src: url('../fonts/Arial-Black.eot?#iefix') format('embeddedopentype'),
+    url("../fonts/Arial-Black.woff2") format("woff2"),
+    url("../fonts/Arial-Black.woff") format("woff"),
+    url("../fonts/Arial-Black.ttf") format("truetype"),
+    url("../fonts/Arial-Black.otf") format("opentype"),
+    url('../fonts/Arial-Black.svg#svgArial-Black') format('svg');
+    font-style: normal;
+    font-weight: normal;    
+}
+
+@font-face {
+    font-family: "Arial-Narrow";
+    src: url("../fonts/arial-narrow.eot");
+    src: url('../fonts/arial-narrow.eot?#iefix') format('embeddedopentype'),
+    url("../fonts/arial-narrow.woff2") format("woff2"),
+    url("../fonts/ArialNarrow.woff") format("woff"),
+    url("../fonts/arial-narrow.ttf") format("truetype"),
+    url("../fonts/ArialNarrow.otf") format("opentype"),
+    url('../fonts/ArialNarrow.svg#svgArialNarrow') format('svg');
+    font-style: normal;
+    font-weight: normal;    
+}
+
+@font-face {
+    font-family: "Arial-Black Italic";
+    src: url("../fonts/ArialBlackItalic.eot.eot");
+    src: url('../fonts/ArialBlackItalic.eot?#iefix') format('embeddedopentype'),
+    url("../fonts/Arial-BlackItalic.woff2") format("woff2"),
+    url("../fonts/Arial-BlackItalic.woff") format("woff"),
+    url("../fonts/ArialBlackItalic.ttf") format("truetype"),
+    url("../fonts/Arial-BlackItalic.otf") format("opentype"),
+    url('../fonts/Arial-BlackItalic.svg#svgArial-BlackItalic') format('svg');
+    font-style: italic;
+    font-weight: normal;
+    
+}
+
+@font-face {
+    font-family: "Arial-narrow-bold";
+    src: url("../fonts/arial-narrow-bold.eot");
+    src: url('../fonts/arial-narrow-bold.eot?#iefix') format('embeddedopentype'),
+    url("../fonts/arial-narrow-bold.woff2") format("woff2"),
+    url("../fonts/ArialNarrow-Bold.woff") format("woff"),
+    url("../fonts/arial-narrow-bold.ttf") format("truetype"),
+    url("../fonts/ArialNarrow-Bold.otf") format("opentype"),
+    url('../fonts/ArialNarrow-Bold.svg#svgArialNarrow-Bold') format('svg');
+    font-style: normal;
+    font-weight: normal;
+    
+}
+
+
+ 
+
+
+
+
 /* Сброс стилей */
 
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
@@ -43,7 +103,7 @@ li {
    }
 
 body {
-  font-family: 'Arial Black', arial;
+  font-family: 'Arial-Black';
   color: #fff;
 }
 
@@ -56,7 +116,7 @@ font-weight:bold;
 
 
 #price{position:relative;
-background: url(../img/big.png) no-repeat;
+background: url(../img/full_bg.png) no-repeat;
 background-position: center center;
 background-size: cover;
 background-repeat: no-repeat;     
@@ -192,7 +252,7 @@ font-size: 42px;
 margin:auto;
 text-align: center;
 margin-bottom: 84px;
-font-family: 'Arial Narrow', arial;
+font-family: 'Arial-Narrow';
 line-height: 52px;
 
 
@@ -294,7 +354,7 @@ font-size: 45px;
 margin:auto;
 text-align: center;
 margin-top: 110px;
-font-family: 'Arial Black', sans-serif;
+font-family: 'Arial-Black';
 font-weight:normal;
 letter-spacing: 1.5px;
 }
@@ -623,14 +683,25 @@ br.text_break {
     font-size: 95px;
     
 } 
+}
+
+
+
+@media screen and (max-width : 1100px){
 #price_big {
-    background: url(../img/infos.jpg) no-repeat;
+    background: url(../img/mobile_bg.png) no-repeat;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     z-index: 1;
 }
+
+#price{
+min-height: 800px;
+
+}
+
 
 .table_bg {
   display: block;
@@ -646,34 +717,6 @@ br.text_break {
   position: relative;
   padding-bottom: 30px;
  }
-}
-
-
-
-@media screen and (max-width : 1100px){
-/*#price_big {
-    background: url(../img/info2.jpg) no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    z-index: 1;
-}
-
-.table_bg {
-  display: block;
-  width: 100%;
-  margin:auto;
-  margin-top: 20px;
-
-}
-
-
-
-.price_content {
-  position: relative;
-  padding-bottom: 30px;
- }*/
 
 
 #schema {
@@ -882,8 +925,8 @@ textarea{
     
    }
    #price{position:relative;
-background: url(../img/info2.jpg) no-repeat;
-background-size: contain;
+background: transparent;
+
 }
 }
 
@@ -954,7 +997,7 @@ h1.mainscreen__activity {
     font-size: 26px;
     margin-top: 10px;    
     margin-bottom: 34px;
-     font-family: 'Arial Black', arial;
+     font-family: 'Arial-Black';
      text-align: center;
 }
 
@@ -1302,4 +1345,19 @@ h2.schema__title {
   margin-bottom: 30px;
 }
 
+}
+
+
+@media screen and (min-width : 1100px) and (max-width : 1200px){
+h1.mainscreen__activity {
+ width: 80%;     
+
+}
+.price__numbers {
+    font-size: 64px;
+    }
+.price_textTitle {
+    font-size: 24px;
+    
+}
 }
